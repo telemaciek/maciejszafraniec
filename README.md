@@ -1,4 +1,4 @@
-maciejszafraniec
-================
+Something simple to keep track of.
 
-.com
+maciejszafraniec.com
+maciejszafraniec.pl
