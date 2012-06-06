@@ -70,3 +70,20 @@ a.github {
 a.github:hover {
 	background-position: -394px -0;
 	}
+@media only screen and (max-width: 540px) {
+ 	.container {
+		width: 280px;
+		height: 280px;
+		margin-left: -140px;
+		margin-top: -140px;
+        }
+	h1 {
+		width: 100%;
+	}
+	h1 img {
+		width: 100%;
+	}
+	a {
+		margin: 0 10px 10px 20px;
+	}
+}
