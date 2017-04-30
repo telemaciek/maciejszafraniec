@@ -50,6 +50,10 @@ section nav {
 	text-decoration: none;
 	padding: 12px 20px;
 	display: inline-block;
+	transition: opacity 0.2s;
+}
+.btn:hover {
+	opacity: 1;
 }
 .btn-empty {
 	background: transparent;
