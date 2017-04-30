@@ -25,7 +25,7 @@ section {
 	margin: 0 auto;
 	letter-spacing: 0.2px;
 	padding-top: 90px;
-	padding-bottom: 85px;
+	padding-bottom: 80px;
 	margin-bottom: 20px;
 }
 @media (max-width: 860px) {
@@ -35,6 +35,61 @@ section {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+}
+section nav {
+	margin-top: 20px;
+}
+.btn {
+	opacity: 0.85;
+	background: #606060;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 12px 20px;
+	display: inline-block;
+}
+.btn-empty {
+	background: transparent;
+	color: #444;
+	border: solid 1px #aaa;
+	padding: 11px 19px;
+}
+.btn-elsewhere {
+	padding: 0px;
+	height: 40px;
+	width: 40px;
+	margin-right: 12px;
+	text-align: center;
+	position: relative;
+}
+.btn-elsewhere svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn-linkedin svg {
+	width: 17px;
+	height: 16px;
+}
+.btn-github svg {
+	width: 22px;
+	height: 22px;
+}
+.btn-medium svg {
+	width: 20px;
+	height: 17px;
+}
+.btn-twitter svg {
+	width: 21px;
+	height: 17px;
+}
+.btn-elsewhere svg path,
+.btn-elsewhere svg g {
+	fill: #ffffff;
 }
 .intro {
 	padding-top: 80px;
