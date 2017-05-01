@@ -20,7 +20,7 @@ body {
 section {
 	max-width: 840px;
 	padding: 0 150px 0 50px;
-	background-color: #fafafa;
+	background-color: #f4f4f4;
 	border-radius: 3px;
 	margin: 0 auto;
 	letter-spacing: 0.2px;
@@ -68,6 +68,7 @@ section nav {
 	margin-right: 12px;
 	text-align: center;
 	position: relative;
+	background-color: #fff;
 }
 .btn-elsewhere svg {
 	position: absolute;
@@ -93,7 +94,7 @@ section nav {
 }
 .btn-elsewhere svg path,
 .btn-elsewhere svg g {
-	fill: #ffffff;
+	fill: #6E6E6E;
 }
 .intro {
 	padding-top: 80px;
@@ -105,9 +106,28 @@ section nav {
 .intro em {
 	box-shadow: inset 0 -8px 0 #EEFF98;
 }
+.fsot {
+	background-image: url(../images/fsot.jpg);
+}
+.tabnotes {
+	background-image: url(../images/tabnotes.jpg);
+}
+.elsewhere {
+	background-image: url(../images/elsewhere.jpg);
+}
 h1 {
 	font-weight: 600;
 	font-size: 35px;
 	letter-spacing: -1px;
 	margin-bottom: 18px;
+}
+footer {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 70px;
+	color: #aaa;
+}
+footer a {
+	text-decoration: none;
+	box-shadow: inset 0 -2px 0 #D0F3E3;
 }
