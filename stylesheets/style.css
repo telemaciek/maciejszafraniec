@@ -65,8 +65,8 @@ section nav {
 }
 .btn-empty {
 	background: transparent;
-	color: #444;
-	border: solid 1px #aaa;
+	color: #666;
+	border: solid 1px #666;
 	padding: 11px 19px;
 }
 .btn-elsewhere {
