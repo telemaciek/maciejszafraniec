@@ -450,3 +450,14 @@ footer a:focus {
   padding-left: 6vw;
   float: right;
 }
+.portfolio-item-empty {
+  background-color: #fafafa;
+  border: solid #f0f0f0 1px;
+  text-align: center;
+  padding-top: 120px;
+  cursor: default;
+}
+.portfolio-item-empty::after,
+.portfolio-item-empty::before {
+  display: none;
+}
