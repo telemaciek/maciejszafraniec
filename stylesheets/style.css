@@ -457,6 +457,11 @@ footer a:focus {
   padding-top: 120px;
   cursor: default;
 }
+@media (max-width: 1140px) {
+  .portfolio-item-empty {
+    display: none;
+  }
+}
 .portfolio-item-empty::after,
 .portfolio-item-empty::before {
   display: none;
