@@ -96,6 +96,7 @@ section nav {
 }
 .btn-elsewhere:hover {
 	opacity: 1;
+  background-color: #fff;
 }
 .btn-elsewhere svg {
 	position: absolute;
