@@ -214,6 +214,15 @@ footer a:focus {
   color: #333;
   margin-top: 0;
 }
+.btn-next-project {
+  text-decoration: none;
+  color: #333;
+  margin-top: 0;
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%) translateX(-50px);
+}
 
 /* PROJECT */
 
