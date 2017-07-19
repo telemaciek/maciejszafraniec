@@ -127,6 +127,7 @@ section nav {
 .intro {
 	padding-top: 80px;
 	padding-bottom: 90px;
+	padding-right: 210px;
 	color: #c168cd;
 	background: #d0f3e3 url(../images/thatsme.jpg) no-repeat bottom right 20px;
 	background-size: 35%;
