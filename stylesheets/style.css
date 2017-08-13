@@ -298,6 +298,7 @@ footer a:focus {
   content: "";
   border-radius: 3px;
   opacity: 0.6;
+  background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -347,11 +348,11 @@ footer a:focus {
   background-repeat: no-repeat;
   background-position: center;
   transform: translateX(-50%) scale(0.5);
-  transition: transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   opacity: 0.6;
 }
 .portfolio-item:active::after {
-  transform: translateX(-50%) scale(0.55);
+  transform: translateX(-50%) scale(0.53);
 }
 .portfolio-item:hover::after {
   opacity: 0.8;
