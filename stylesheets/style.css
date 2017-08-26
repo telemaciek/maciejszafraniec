@@ -135,6 +135,7 @@ section nav {
 @media (max-width: 860px) {
 	.intro {
 		background-image: none;
+  	padding-right: 30px;
 	}
 }
 .intro em {
@@ -262,7 +263,7 @@ footer a:focus {
 }
 @media (max-width: 1140px) {
   .portfolio-items-wrapper-open {
-    height: 1160px;
+    height: 1550px;
   }
 }
 .portfolio-items-wrapper-open article {
