@@ -7,15 +7,60 @@
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
 		<title>Maciej Szafraniec</title>
 	</head>
-	<body>
+	<body class="">
 		<section class="intro">
 			<h1>
 				Maciej Szafraniec
 			</h1>
 			<p>
-				I’m a <em>full-stack&nbsp;designer</em>, with over&nbsp;8&nbsp;years of&nbsp;experience in&nbsp;creating and&nbsp;shipping interactive products.
+				I’m a full-stack&nbsp;designer, with over&nbsp;8&nbsp;years of&nbsp;experience in&nbsp;creating and&nbsp;shipping interactive products.
 			</p>
 		</section>
+		<div class="portfolio-wrapper" id="portfolio">
+			<section class="portfolio">
+				<p>
+					I worked with startups, advertising agencies and corporate clients on over 30 projects.
+					Let me show you some examples.
+					<!-- help companies achieve business goals and build sticky, useful products. -->
+				</p>
+				<nav>
+					<span class="btn" id="js-portfolio-toggle-button">View projects</span>
+					<!-- <a href="#" class="btn btn-empty">Read more about me</a> -->
+				</nav>
+			</section>
+
+			<div class="portfolio-items-wrapper" id="js-portfolio-items-wrapper">
+				<a href="projects/followup/index.html">
+					<article class="portfolio-item portfolio-item-followup">
+						<div class="portfolio-item-screenshot portfolio-item-screenshot-followup">
+
+						</div>
+					</article>
+				</a>
+				<a href="projects/najedzenifest/index.html">
+					<article class="portfolio-item portfolio-item-najedzeni">
+						<div class="portfolio-item-screenshot portfolio-item-screenshot-najedzeni">
+
+						</div>
+					</article>
+				</a>
+				<a href="projects/locallife/index.html">
+					<article class="portfolio-item portfolio-item-locallife">
+						<div class="portfolio-item-screenshot portfolio-item-screenshot-locallife">
+
+						</div>
+					</article>
+				</a>
+				<a href="projects/bidroom/index.html">
+					<article class="portfolio-item portfolio-item-bidroom">
+						<div class="portfolio-item-screenshot portfolio-item-screenshot-bidroom">
+
+						</div>
+					</article>
+				</a>
+			</div>
+
+		</div>
 		<section class="fsot">
 			<p>
 				I've been running a photoblog since 2004. <br>
@@ -69,12 +114,57 @@
 			</p>
 		</footer>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-98396487-1', 'auto');
-		  ga('send', 'pageview');
+
+			function initiatePortfolio() {
+
+				var portfolioContainer = document.getElementById('js-portfolio-items-wrapper');
+				var hash = window.location.hash.substring(1);
+				var portfolioButton = document.getElementById('js-portfolio-toggle-button');
+
+				if (hash === "portfolio" || hash === "portfolio-open") {
+					portfolioContainer.className = "portfolio-items-wrapper-open";
+					portfolioButton.innerText = 'Close projects';
+					portfolioButton.className = 'btn btn-empty';
+				} else {
+					portfolioContainer.className = "portfolio-items-wrapper";
+					portfolioButton.innerText = 'View projects';
+					portfolioButton.className = 'btn';
+				}
+
+			}
+
+			function initiatePortfolioButton() {
+				var portfolioButton = document.getElementById('js-portfolio-toggle-button');
+				portfolioButton.addEventListener('click', portfolioToggle);
+			}
+
+			function portfolioToggle() {
+				var hash = window.location.hash;
+
+				if (hash === "#portfolio" || hash === "#portfolio-open") {
+					window.location.hash = "#_";
+				} else {
+					window.location.hash = "#portfolio-open"
+				}
+
+				initiatePortfolio();
+			}
+
+			initiatePortfolio();
+			initiatePortfolioButton()
+
+
+
+
+
+
+
+		  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  // ga('create', 'UA-98396487-1', 'auto');
+		  // ga('send', 'pageview');
 		</script>
 	</body>
 </html>
