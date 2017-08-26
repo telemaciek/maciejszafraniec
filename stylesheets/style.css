@@ -169,10 +169,19 @@ section nav {
 	background-size: cover;
 }
 h1 {
-	font-weight: 600;
 	font-size: 35px;
+  font-weight: 600;
 	letter-spacing: -1px;
 	margin-bottom: 18px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin: 30px 0;
+}
+strong {
+  font-weight: 600;
 }
 footer {
 	font-size: 14px;
@@ -312,7 +321,7 @@ footer a:focus {
   background-image: url(../projects/followup/portfolio-item-followup-bg.png);
 }
 .portfolio-item-followup:hover::before {
-  /*opacity: 1;*/
+  opacity: 1;
 }
 .portfolio-item-najedzeni::before {
   background-image: url(../projects/najedzenifest/portfolio-item-najedzenifest-bg.png);
@@ -388,6 +397,10 @@ footer a:focus {
 }
 .portfolio-item:hover .portfolio-item-screenshot {
   /*border-width: 16px 16px 0 16px;*/
+}
+.portfolio-item-screenshot-followup {
+  background-image: url(../projects/followup/portfolio-item-followup.jpg);
+  width: 400px;
 }
 .portfolio-item-screenshot-bidroom {
   background-image: url(../projects/bidroom/portfolio-item-bidroom.jpg);
