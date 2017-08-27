@@ -179,7 +179,7 @@ h2 {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: -1px;
-  margin: 30px 0;
+  margin: 30px 0 20px 0;
 }
 strong {
   font-weight: 600;
@@ -449,11 +449,11 @@ footer a:focus {
 .project-text {
   max-width: 780px;
   padding: 0 2vw;
-  margin: 120px auto;
+  margin: 100px auto;
   clear: both;
 }
 .project-image {
-  margin: 120px 2vw;
+  margin: 100px 2vw;
     text-align: center;
 }
 .project-image img {
