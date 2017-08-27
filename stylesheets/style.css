@@ -132,6 +132,9 @@ section nav {
 	background: #d0f3e3 url(../images/thatsme.jpg) no-repeat bottom right 20px;
 	background-size: 35%;
 }
+.intro h1 {
+  font-size: 35px;
+}
 @media (max-width: 860px) {
 	.intro {
 		background-image: none;
@@ -170,7 +173,7 @@ section nav {
 	background-size: cover;
 }
 h1 {
-	font-size: 35px;
+	font-size: 45px;
   font-weight: 600;
 	letter-spacing: -1px;
 	margin-bottom: 18px;
@@ -438,12 +441,12 @@ footer a:focus {
 }
 .project-title {
   text-align: center;
-  margin: 120px 0 10px 0;
+  margin: 100px 0 10px 0;
 }
 .project-subtitle {
   text-align: center;
   margin: 10px 0 30px 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #717171;
 }
 .project-text {
