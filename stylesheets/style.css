@@ -146,7 +146,7 @@ section nav {
 }
 .portfolio {
 	color: #444;
-	background-image: url(../images/portfolio.png);
+	/*background-image: url(../images/portfolio.png);*/
 }
 .fsot {
 	color: #ec8484;
@@ -186,6 +186,7 @@ h2 {
 }
 strong {
   font-weight: 600;
+  color: #666;
 }
 footer {
 	font-size: 14px;
@@ -246,47 +247,45 @@ footer a:focus {
 .portfolio-items-wrapper {
   max-width: 1140px;
   margin: 0 auto;
-  height: 0;
   padding-bottom: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: scale(0.6);
+
+  height: 630px;
+  position: relative;
 }
 .portfolio-items-wrapper article {
-  transform: scale(0.4) translateY(-250px);
-}
-.portfolio-items-wrapper-open {
-  max-width: 1140px;
-  margin: 0 auto;
-  height: 780px;
-  padding-bottom: 50px;
-  overflow: hidden;
-  opacity: 1;
-  transform: scale(1);
-}
-@media (max-width: 1140px) {
-  .portfolio-items-wrapper-open {
-    height: 1550px;
-  }
-}
-.portfolio-items-wrapper-open article {
-  transform: scale(1)translateY(0px);
+  position: absolute;
 }
 
-
+.portfolio-item-followup {
+  left: -130px;
+  top: 60px;
+}
+.portfolio-item-najedzeni {
+  left: 370px;
+  top: 60px;
+}
+.portfolio-item-bidroom {
+  left: -130px;
+  top: 320px;
+}
+.portfolio-item-locallife {
+  left: 370px;
+  top: 320px;
+}
 
 
 /**/
 
 .portfolio-item {
-  width: 540px;
-  height: 280px;
+  width: 460px;
+  height: 220px;
   /*background-color: #f0f0f0;*/
-  float: left;
+  /*float: left;*/
   margin: 15px 15px 80px 15px;
   position: relative;
   border-radius: 3px;
   transition: transform 0.3s;
+  background-color: #fff;
 }
 @media (max-width: 1140px) {
   .portfolio-item {
@@ -353,7 +352,7 @@ footer a:focus {
   height: 160px;
   /*background: red;*/
   position: absolute;
-  bottom: -110px;
+  bottom: 20px;
   left: 50%;
   content: "";
   /*transform: translateX(-50%);*/
