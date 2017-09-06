@@ -146,7 +146,19 @@ section nav {
 }
 .portfolio {
 	color: #444;
-	/*background-image: url(../images/portfolio.png);*/
+  background-color: #f9f9f9;
+	background-image: url(../images/portfolio.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 1000px) {
+  .portfolio {
+		padding-right: 50px;
+	}
+}
+@media (max-width: 860px) {
+	.portfolio {
+  	padding-right: 30px;
+	}
 }
 .fsot {
 	color: #ec8484;
@@ -248,12 +260,15 @@ footer a:focus {
   max-width: 1140px;
   margin: 0 auto;
   padding-bottom: 0;
-
   height: 630px;
   position: relative;
 }
-.portfolio-items-wrapper article {
-  position: absolute;
+@media (max-width: 1000px) {
+  .portfolio-items-wrapper {
+    height: 1000px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 
 .portfolio-item-followup {
@@ -265,11 +280,11 @@ footer a:focus {
   top: 60px;
 }
 .portfolio-item-bidroom {
-  left: -130px;
-  top: 320px;
+left: 370px;
+top: 320px;
 }
 .portfolio-item-locallife {
-  left: 370px;
+  left: -130px;
   top: 320px;
 }
 
@@ -281,24 +296,20 @@ footer a:focus {
   height: 220px;
   /*background-color: #f0f0f0;*/
   /*float: left;*/
-  margin: 15px 15px 80px 15px;
-  position: relative;
+
+  position: absolute;
   border-radius: 3px;
   transition: transform 0.3s;
   background-color: #fff;
 }
-@media (max-width: 1140px) {
+@media (max-width: 1000px) {
   .portfolio-item {
-    width: 840px;
-    margin-left: calc((100% - 840px) / 2);
-    margin-right: calc((100% - 840px) / 2);
-  }
-}
-@media (max-width: 860px) {
-  .portfolio-item {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(100% - 40px);
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 40px 0;
+    width: 100%;
   }
 }
 .portfolio-item::before {
@@ -321,47 +332,53 @@ footer a:focus {
   cursor: pointer;
 }
 .portfolio-item-followup::before {
-  background-image: url(../projects/followup/portfolio-item-followup-bg.png);
+  background-color: #ddd;
+  /*background-image: url(../projects/followup/portfolio-item-followup-bg.png);*/
 }
 .portfolio-item-followup:hover::before {
   opacity: 1;
 }
 .portfolio-item-najedzeni::before {
-  background-image: url(../projects/najedzenifest/portfolio-item-najedzenifest-bg.png);
+  background-color: #ddd;
+  /*background-image: url(../projects/najedzenifest/portfolio-item-najedzenifest-bg.png);*/
   opacity: 0.8
 }
 .portfolio-item-najedzeni:hover::before {
   opacity: 1;
 }
 .portfolio-item-bidroom::before {
-  background-image: url(../projects/bidroom/portfolio-item-bidroom-bg.png);
+  background-color: #ddd;
+  /*background-image: url(../projects/bidroom/portfolio-item-bidroom-bg.png);*/
 }
 .portfolio-item-bidroom:hover::before {
   /*opacity: 1;*/
 }
 .portfolio-item-locallife::before {
-  background-image: url(../projects/locallife/portfolio-item-locallife-bg.png);
+  background-color: #ddd;
+  /*background-image: url(../projects/locallife/portfolio-item-locallife-bg.png);*/
   opacity: 0.8;
 }
 .portfolio-item-locallife:hover::before {
   opacity: 1;
 }
 .portfolio-item::after {
+
   display: block;
   width: 540px;
   height: 160px;
-  /*background: red;*/
+  text-align: center;
   position: absolute;
-  bottom: 20px;
+  top: 10px;
   left: 50%;
-  content: "";
-  /*transform: translateX(-50%);*/
-  /*background-size: 50%;*/
+  content: "Lorem ipsum dolor sit amet, bejbe Lorem ipsum dolor sit amet, bejbe";
+  padding-top: 140px;
+  font-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
   transform: translateX(-50%) scale(0.5);
   transition: opacity 0.3s, transform 0.3s;
   opacity: 0.6;
+  color: #222;
 }
 .portfolio-item:active::after {
   transform: translateX(-50%) scale(0.53);
