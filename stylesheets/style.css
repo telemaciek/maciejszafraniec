@@ -146,7 +146,7 @@ section nav {
 }
 .portfolio {
 	color: #444;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
 	background-image: url(../images/portfolio.png);
   background-repeat: no-repeat;
 }
@@ -395,7 +395,7 @@ top: 320px;
   background-position: center;
   transform: translateX(-50%) scale(0.5);
   transition: opacity 0.3s, transform 0.3s;
-  opacity: 0.8;
+  opacity: 1;
   color: #fff;
   font-size: 30px;
 }
@@ -403,7 +403,7 @@ top: 320px;
   transform: translateX(-50%) scale(0.53);
 }
 .portfolio-item:hover::after {
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 .portfolio-item-locallife::after {
   background-image: url(../projects/locallife/portfolio-logo-locallife-white.png);
