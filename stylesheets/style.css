@@ -14,7 +14,7 @@ html {
 }
 body {
 	font-size: 20px;
-	font-family: "Proxima Nova", proxima-nova, sans-serif;
+	font-family: proxima-nova, sans-serif;
 	font-weight: 300;
 	line-height: 1.2;
 	padding-top: 40px;
@@ -74,14 +74,14 @@ section nav {
 }
 .btn-empty {
 	background: transparent;
-	color: #9f9f9f;
-	border: solid 1px #b3b3b3;
+	color: #666666;
+	border: solid 1px #999999;
 	padding: 11px 19px;
 	transition: color 0.2s, border-color 0.2s;
 }
 .btn-empty:hover {
-	color: #666;
-	border-color: #999;
+	color: #333;
+	border-color: #333;
   background-color: transparent;
 }
 .btn-elsewhere {
@@ -170,10 +170,10 @@ section nav {
   background-size: 100%;
 }
 .fsot .btn {
-	background-color: #f98c8c;
+	background-color: #F75151;
 }
 .fsot .btn:hover {
-	background-color: #ec8484;;
+	background-color: #EC3838;;
 }
 .tabnotes {
 	background-image: url(../images/tabnotes.jpg);
@@ -189,7 +189,7 @@ section nav {
 	background-size: cover;
 }
 h1 {
-  font-family: Futura, futura-pt, sans-serif;
+  font-family: futura-pt, sans-serif;
 	font-size: 45px;
   font-weight: 400;
 	letter-spacing: -1px;
