@@ -108,6 +108,10 @@ section nav {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.btn-dribbble svg {
+    width: 20px;
+    height: 20px;
+}
 .btn-linkedin svg {
 	width: 17px;
 	height: 16px;
@@ -391,6 +395,20 @@ top: 300px;
   opacity: 0;
   cursor: pointer;
 }
+
+.portfolio-item-label {
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    background: #61bacc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    transform: rotatez(8deg);
+}
+
 .portfolio-item-followup {
   background-image: url(../projects/followup/portfolio-item-followup-bg.png);
 }
