@@ -79,7 +79,7 @@ section nav {
 	background: transparent;
 	color: #666666;
 	border: solid 1px #999999;
-	padding: 11px 19px;
+	padding: 12px 18px;
 	transition: color 0.2s, border-color 0.2s;
 }
 .btn-empty:hover {
